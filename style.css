@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: linear-gradient(rgb(218, 248, 246), rgb(65, 174, 236));
+    color: #333;
+    padding: 20px;
+    text-align: justify;
+  }
+mark {
+  background-color: #fff3b0;
+  padding: 2px;
+  border-radius: 11px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.tituloprincipal {
+ text-align: center;
+  text-shadow: 2px 2px 4px rgba(71, 118, 139, 0.356);
+  color:rgba(23, 89, 105, 0.822);
+  font-weight: bold;
+}
+.titulo{
+ text-align: center;
+ font-weight: bold;
+}
+.barralateral {
+  width: 200px;
+  background-color: rgba(0, 88, 202, 0.212);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  float: unset;
+  }
+
+.grifado {
+  background-color: #7916ca5e;
+  border-radius: 2px;
+}
+.logo {
+  display: block;
+  margin: 0px 20px auto 20px;
+}
+.fraseefeito {
+  text-align: left;
+  font-style: italic;
+  color: rgba(1, 38, 48, 0.801);
+}
+.final {
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 10px;
+  padding: 5px 5px 5px 15px;
+}
+a {
+  color: #081e7e;
+  text-decoration: none;
+}
+a:hover {
+  background-image: linear-gradient(to top, #71009e, #00298f4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}

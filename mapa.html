@@ -1,0 +1,43 @@
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+       <title>Doações</title>
+       <header>
+         <img class="logo" src="../imgs/logo.png" alt="Logo SONGs" width="150" height="150">
+            <nav class="barralateral">
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="instagram.html">Informações</a></li>
+            </ul>
+        </nav>
+           <h1 class="titulo">Confira ONGs que aceitam doações</h1>
+           <h2 class="titulo">Perto de você</h2>
+       </header>
+   </head>
+   <box id="centro">
+   <body>
+       <form id="busca-maps">
+           <label>Estado:</label>
+                <input type="text" name="estado" required><br>
+            <label>Cidade:</label>
+              <input type="text" name="cidade" required><br>
+            <label>Bairro:</label>
+              <input type="text" name="bairro" required><br>
+           <button type="submit">Enviar</button>
+       </form>
+
+       <script> //js
+       document.getElementById('busca-maps').addEventListener('submit', function(e) {
+           e.preventDefault();
+           const bairro = encodeURIComponent(this.bairro.value);
+           const cidade = encodeURIComponent(this.cidade.value);
+           const estado = encodeURIComponent(this.estado.value);
+           const url = `https://www.google.com/maps/search/Ong+${bairro}+${cidade}+${estado}`;
+           window.open(url, '_blank');
+       });
+       </script>
+   </body>
+   </box>
+</html>
